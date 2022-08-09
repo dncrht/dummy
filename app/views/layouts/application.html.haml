@@ -23,12 +23,12 @@
 
       .text-white
         - if signed_in?
-          Signed in as:
+          Logged in as:
           = link_to current_user.email, account_path
           \.
-          = link_to 'Sign out', sign_out_path, method: :delete
+          = link_to 'Log out', log_out_path, method: :delete
         - else
-          = link_to 'Sign in', sign_in_path
+          = link_to 'Log in', log_in_path
 
     - if content_for? :hero
       .bg-dark

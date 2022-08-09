@@ -5,8 +5,8 @@ Rails.application.routes.draw do
 
   resources :users, controller: "users", only: [:create]
 
-  get "/sign_in" => "clearance/sessions#new", as: "sign_in"
-  delete "/sign_out" => "account#destroy", as: "sign_out"
+  get "/log_in" => "clearance/sessions#new", as: "log_in"
+  delete "/log_out" => "account#destroy", as: "log_out"
   get "/sign_up" => "users#new", as: "sign_up"
 
   get 'pricing', to: 'home#pricing'
