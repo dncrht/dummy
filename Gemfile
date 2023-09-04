@@ -15,6 +15,7 @@ gem 'haml'
 gem 'clearance'
 
 gem "pry-rails"
+gem 'matrix'
 
 group :development do
   gem 'spring-commands-rspec'
